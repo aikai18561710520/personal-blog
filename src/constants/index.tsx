@@ -1,0 +1,5 @@
+export const REQUEST_INDEX = 'REQUEST_INDEX'
+export type REQUEST_INDEX = typeof REQUEST_INDEX
+
+export const REQUEST_ARTICLE = 'REQUEST_ARTICLE'
+export type REQUEST_ARTICLE = typeof REQUEST_ARTICLE
