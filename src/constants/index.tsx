@@ -3,3 +3,6 @@ export type REQUEST_INDEX = typeof REQUEST_INDEX
 
 export const REQUEST_ARTICLE = 'REQUEST_ARTICLE'
 export type REQUEST_ARTICLE = typeof REQUEST_ARTICLE
+
+export const SEARCH_INFO = 'SEARCH_INFO'
+export type SEARCH_INFO = typeof SEARCH_INFO
