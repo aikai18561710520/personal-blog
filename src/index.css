@@ -219,15 +219,6 @@ html {
 
 
 /**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-
-a:focus {
-    outline: thin dotted;
-}
-
-
-/**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
@@ -501,4 +492,16 @@ html,
 body,
 #root {
     height: 100%;
+    min-height: 100%;
+}
+
+.spin {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

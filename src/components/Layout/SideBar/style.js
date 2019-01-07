@@ -11,3 +11,9 @@ export const SideBox = styled.div `
 export const SearchBox = styled.div `
     font-size:16px;
 `
+
+export const SearchResult = styled.ul `
+    font-size:14px;
+    padding-top:10px;
+    padding-left:10px;
+`

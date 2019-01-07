@@ -3,11 +3,17 @@ import * as React from 'react'
 import {ReactHTML} from 'react'
 import Header from '../Layout/Header/Header'
 import SideBar from '../Layout/SideBar/sideBar'
+import {LayoutWrapper} from './style'
 interface IProps {
     children : ReactHTML,
-    searchArticles : (content : string) => void
+    searchArticles : (content : string) => void,
+    home : IHome
 }
 
+interface IHome {
+    list : object[],
+    searchContent : string
+}
 const {Content} = Layout
 
 class App extends React.Component < IProps > {
@@ -15,7 +21,7 @@ class App extends React.Component < IProps > {
         const {children, searchArticles} = this.props
         console.log(this.props);
         return (
-            <Layout>
+            <LayoutWrapper>
                 <BackTop/>
                 <Header/>
                 <Layout>
@@ -42,14 +48,16 @@ class App extends React.Component < IProps > {
                                     offset: 1,
                                     span: 6
                                 }}>
-                                    <SideBar searchArticles={searchArticles}/>
+                                    <SideBar
+                                        searchContent={this.props.home.searchContent}
+                                        list={this.props.home.list}
+                                        searchArticles={searchArticles}/>
                                 </Col>
                             </Row>
                         </Col>
-
                     </Content>
                 </Layout>
-            </Layout>
+            </LayoutWrapper>
         )
     }
 }

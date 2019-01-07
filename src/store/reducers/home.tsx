@@ -1,6 +1,20 @@
 import {REQUEST_INDEX, SEARCH_INFO} from '../../constants'
 import {IHome} from '../actions'
-const home = (state : object = {}, action : IHome) : object => {
+const defaultState : object = {
+    searchContent: '',
+    list: [
+        {
+            label: '1'
+        }, {
+            label: '1'
+        }, {
+            label: '1'
+        }, {
+            label: '1'
+        }
+    ]
+}
+const home = (state : object = defaultState, action : IHome) : object => {
     switch (action.type) {
         case REQUEST_INDEX:
             return {}

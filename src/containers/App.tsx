@@ -4,9 +4,10 @@ import App from '../components/App/App'
 import {REQUEST_INDEX, SEARCH_INFO} from '../constants'
 import {IPayload} from '../store/actions'
 interface IDataInterface {
-    data : object
+    searchContent : string
+    list : object[]
 }
-const mapStateToProps = ({data} : IDataInterface) => ({data})
+const mapStateToProps = (data : IDataInterface) => (data)
 const mapDispatchToProps = (dispatch : any) => ({
     fetchData(payload : IPayload) {
         dispatch({type: REQUEST_INDEX, payload})

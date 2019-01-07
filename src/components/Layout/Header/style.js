@@ -20,6 +20,7 @@ export const NavBar = styled.div `
     .nav_item{
         display:inline-block;
         color:#aaa;
+        margin-right:15px;
         transition: all .2s;
         :hover{
             color:#fff;

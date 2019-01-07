@@ -5,8 +5,17 @@ import App from '../containers/App'
 import loading from './loading'
 const Routes = [
     {
+        component: () => import ('../containers/Articles'),
+        path: '/'
+    }, {
         component: () => import ('../containers/Login'),
         path: '/login'
+    }, {
+        component: () => import ('../containers/Articles'),
+        path: '/articles'
+    }, {
+        component: () => import ('../containers/Categories'),
+        path: '/categories'
     }
 ]
 

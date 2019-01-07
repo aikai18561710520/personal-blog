@@ -31,7 +31,8 @@ const HeaderDom = () => {
                             </Col>
                             <Col sm={0} md={4} lg={6} xl={8}>
                                 <NavBar>
-                                    <Link to={'/login'} className="nav_item">首页</Link>
+                                    <Link to={'/articles'} className="nav_item">首页</Link>
+                                    <Link to={'/categories'} className="nav_item">分类</Link>
                                 </NavBar>
                             </Col>
                         </Row>
